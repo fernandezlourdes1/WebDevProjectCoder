@@ -1,0 +1,196 @@
+.bg{
+    background-color: rgb( 22,22,22);
+}
+h1 { 
+    color: #CB6D51;
+}
+@font-face {
+    font-family: "formadjrdisplay";
+    src: url("../assets/fonts/Forma\ DJR\ Display.ttf");
+}
+@font-face {
+    font-family: "delagothicone" ;
+    src: url("../assets/fonts/DelaGothicOne-Regular.ttf");
+}
+@font-face {
+    font-family: "plyafairdisplay-reg";
+    src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+.background-img {
+    display: flex;
+    align-items: center;
+    padding-bottom: 640px;
+    background-size: cover;
+    justify-content: space-between;
+    background: linear-gradient( to top);
+    background: url("../assets/images/Portadahome.png");
+}
+
+h1{ 
+    font-family: "delagothicone";
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.reihome{
+    width: 100%;
+    height: 100%;
+}
+
+.sections{
+display: flex;
+justify-content: flex-end;
+margin: 0 45px;
+padding: 10px 0px;
+}
+.sections li{
+    padding: 10px 30px;
+}
+.homeindex{
+    color: #FFEBCD;
+    font-family: "formadjrdisplay";
+}
+.aboutRei{
+    color: #CB6D51;
+    font-family: "formadjrdisplay";
+    text-decoration: none;
+}
+
+.collections{
+    color: #CB6D51;
+    font-family: "formadjrdisplay";
+    text-decoration: none;
+}
+
+.contact{
+    color: #CB6D51;
+    font-family: "formadjrdisplay";
+    text-decoration: none;
+}
+
+.help{
+    color: #CB6D51;
+    font-family: "formadjrdisplay";
+    text-decoration: none;
+}
+
+.imghomex4 {
+    height: 100;
+    display: flex;
+}
+.imghomex4 {
+width: 557px;
+height:557px ;
+justify-content: space-between;
+border-top: 5px solid black;
+border-left: 5px solid black;
+}
+
+.p {
+    font-size: 30px;
+    overflow-y: scroll;
+    height: 66px;
+    margin: 10px;
+}
+.cremita{
+    color: #FFEBCD;
+    font-family: "playfairdisplay-flex";
+}
+
+.delagothic{
+    font-family:"delagothicone";
+    color: #CB6D51;
+}
+
+.fotoytextoHome1  {
+    font-family: "playfairdisplay-reg";
+    color: #CB6D51;
+    text-align: left;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.title {
+    margin: 5px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    background-color: black;
+    padding: 3%;
+    font-family: "delagothicone";
+    justify-content: flex-start;
+}
+.button button{
+    background-color: black;
+    color: #FFEBCD;
+    padding: 10px;
+    border: none;
+    font-family: "formadjrdisplay"; 
+    text-decoration: underline;
+}
+
+
+
+
+main section div .delagothic{
+    font-family: "delagothicone";
+    font-size: 30px;
+    color: #CB6D51;
+    text-align: left;
+    position: absolute;
+    left: 0;
+
+}
+
+section .img1seemore{
+    margin: 5px;
+    display: flex;
+    height: 100%;
+    justify-content: right;
+    align-items: right;
+}
+
+.footInfo p{
+    color: #CB6D51;
+    font-family: "formadjrdisplay";
+}
+
+.hm{
+    color: #FFEBCD;
+    font-family: "formadjrdisplay";
+}
+.lng{
+    color: #CB6D51;
+    font-family:"formadjrdisplay" ;
+}
+select option{
+    color: #CB6D51;
+    background-color: #FFEBCD;
+    font-family: "formadjrdisplay";
+}
+
+
