@@ -1062,14 +1062,99 @@
         margin-bottom: 20px;
     }
 
-    @media screen and (max-width: 480px) {
-        .background-img3{
-            max-width: 480px;
+
+
+
+
+    @media (max-width: 768px) {
+        .background-img5 {
+            flex-direction: column;
+            padding-bottom: 50vh;
+            .logo{
+                font-size: 17px;
+            }
         }
-
-        body {
-            max-width: 480px;
+        
+        .sections {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 15px;
         }
-
-
+    
+        .help {
+            grid-template-columns: 1fr;
+            font-size: 20px;
+        }
+        .lastpart {
+            margin-bottom: 15px;
+                font-size: 12px;
+                .qya{
+                    font-size: 11px;
+                }
+            }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .submit, .reset {
+            width: 100px;
+            font-size: 12px;
+        }
+        .footInfo{
+            margin-right: 30px;
+        }
     }
+
+        @media (max-width: 480px) {
+            .background-img5 {
+                padding-bottom: 30vh;
+                .logo{
+                    font-size: 7px;
+                }
+            }
+            
+            .sections {
+                font-size: 7px;
+            }
+        
+            .help {
+                font-size: 18px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .lastpart {
+                margin-bottom: 10px;
+            }
+            .qya{
+                font-size: 12px;
+                padding: 0px 30px;
+            }
+            .submit, .reset {
+                width: 100px;
+                font-size: 8px;
+            }
+            .form label, .form input, .form select {
+                width: 100%;
+            }
+            .form{
+                width: 50%;
+                margin: 0px auto;
+            }
+            .au{
+                font-size: 12px;
+            }
+            .hm{
+                font-size: 12px;
+            }
+            .footInfo{
+                margin-right: 20px;
+                font-size: 12px;
+            }
+            .iconosFooter{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
