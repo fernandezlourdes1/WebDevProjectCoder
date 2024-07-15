@@ -1,7 +1,7 @@
     * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
     @font-face {
         font-family: "delagothicone";
@@ -17,146 +17,96 @@
     }
 
 
-    /* Index.html*/
-
-
-    header{
-        grid-area: header;
-    }
-
+/* Index.html*/
     body{
-        display: grid;
-        grid-template-areas:
-        "header"
-        "main"
-        "footer";
         background-color: rgb(22, 22, 22);
-        margin: 0;
     }
-
-    .logo{
-        font-family: "delagothicone";
-        justify-items: start;
-        margin: 5px;
-        font-size: 25px;
-        color: #CB6D51;
-        margin-top: 3px;
-    }
-
-    .sections{
-        display: grid;
-        grid-template-columns: 100px 100px 100px 100px;
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
-        margin: 0 19px;
-        padding: 10px 0px;
-        margin-top: 3px;
-    }
-    .section:hover {
-        text-decoration: underline #CB6D51;
-    }
-    .section{
-        color:#CB6D51;
-        text-decoration: none;
-        padding: 35px 30px;
-        font-family: "formadjrdisplay";
-        border: #CB6D51;
-        font-size: 19px;
-    }
-
-    .background-img{
-        display: flex;
-        justify-content: cover;
-        align-items: center;
-        padding-bottom: 860px;
+    .header{
+        height: 100vh;
         width: 100%;
-        justify-content: space-between;
-        background: linear-gradient( top);
-        background: url("../assets/images/Portadahome.png");
-        background-size: cover; 
-        background-repeat: no-repeat; 
+        background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../assets/images/Portadahome.png); 
+        background-size: cover;
         background-position: center;
     }
-
-
-    main{
-        grid-area: main;
+    .titulo{
+        font-family: "delagothicone";
+        font-size: 80px;
+        color: #CB6D51;
     }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 10px;
+    }
+    nav ul li a{
+        color: #CB6D51;
+        font-family: "formadjrdisplay";
+        font-size: 22px;
+        text-decoration: none;
+    }
+    nav ul li:hover {
+        text-decoration: underline #CB6D51;
+    }
+
 
     .imghomex4{
         display: grid;
-        height: 650px;
-        object-fit: contain;
         grid-template-columns:1fr 1fr 1fr 1fr;
+        height:fit-content;
         width: 100%;
+        object-fit: contain;
+        margin: 10px 0px;
         gap: 5px;
-        box-sizing: border-box;
-        margin-top: 5px;
-        margin-bottom: 10px;
     }
 
-    .foto1:hover{
-        -webkit-transform:scale(1.1);transform:scale(1.1);
-        overflow:hidden;
-    }
     .foto1{
-        height: 600px;
+        height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
         margin: 0;
     }
-
+    .foto1:hover{
+        box-sizing: border-box;
+        filter: blur(2px);
+    }
 
     .fotoytextoHome1{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 50px;
         width: 100%;
-        gap: 5px;
     }
-    .imgh1{
+    .foto{
         margin-left: 5px;
-        margin-top: 10px;
         height: 705px;
-        
     }
-    .p{
+    .texto6{
         margin: auto 0px;
         font-family:"playfairdisplay-reg" ;
         color: #FFEBCD;
         overflow-y: scroll;
-        font-size: 30px;
-        height: 66px;
+        font-size: 25px;
+        height: 60px;
+        margin-right: 20px;
     }
 
-    .fotoytextoHome1{
-        display: grid;
-        grid-template-columns: 1fr,1fr;
-        column-gap: 50px;
-        flex-direction:row;
-        padding: 0;
-        margin: 0;
-    }
-    .fotoytextoHome1{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
 
-    .abstractanger{ 
+    .colecciones-vermas{ 
         display: grid;
-        height: 818px;
-        object-fit: contain;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        margin-top: 10px;
     }
 
     .title{
         text-align: center;
-        align-self: center;
+        align-content: center;
     }
 
     .delagothic{
@@ -177,22 +127,20 @@
         text-decoration: underline;
     }
     .img1seemore{
-        width: 100%;
+        max-width: 100%;
         margin-right: 5px;
+        justify-self: center;
+        align-self: center;
     }
 
     .imagenfinal{
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 2011px;
+        height: auto;
         width: 100%;
         margin-top: 10px;
     }
     footer{
-        grid-area: footer;
-    }
-    footer{
         background-color: black;
+        height: 250px;
     }
     .hm{
         display: grid;
@@ -202,8 +150,7 @@
         color: #FFEBCD;
         font-family: "formadjrdisplay";
         font-size: 19px;
-        margin-top: 50px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .hm:hover{
         text-decoration: underline;
@@ -233,7 +180,6 @@
     .iconosFooter{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-bottom: 60px;
     }
     .socialmedia{
         justify-self: center;
@@ -247,42 +193,29 @@
     /* About REI*/
 
 
-    .background-img2{
-        display: flex;
-        align-items: center;
-        padding-bottom: 1990px;
+    .header-aboutrei{
+        height: 2550px;
         width: 100%;
-        justify-content: space-between;
-        background: url("../assets/images/Portada\ About\ Rei.png");
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../assets/images/Portada\ About\ Rei.png);
+        background-size:cover;
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-
-    .grupo{
+    
+    .parrafoycorazones{
         display: grid;
         grid-template-columns:1fr 4fr 1fr;
         align-items: center;
         justify-items: center; 
     }
-
-    .CorazonTextAboutRei {
-        display: grid;
-        grid-template-columns:1fr;
-    }
-    .CorazonD{
+    .corazonAboutRei{
         width: 200px;
     }
 
-    .TextCollections{
-        grid: 1fr;
+    .textAboutRei{
         font-family: "playfairdisplay-reg";
         color: #FFEBCD;
-        font-size: 40px;
+        font-size: 30px;
         padding: 0px 40px;
-    }
-    .texto{
-        padding: 20px 0px;
     }
 
     .fotocInfo{
@@ -305,7 +238,7 @@
         color: #FFEBCD;
         font-size: 22px;
     }
-    .inf{
+    .parrafofinal{
         margin-bottom: 1rem;
         text-align: center;
         font-family: "delagothicone";
@@ -324,7 +257,7 @@
 
     .f1{
         width: 100%;
-        margin: 0;
+        margin-bottom: 30px;
         object-fit: cover;
         padding: none;
     }
@@ -363,30 +296,20 @@
     overflow:hidden;
     }
 
-    footer{
-        padding-bottom: 0px;
-        grid-area: footer;
-    }
-
-
     /*Collections*/
 
-    .background-img3{
-        display: flex;
-        justify-content: cover;
-        align-items: center;
-        padding-bottom: 1444px;
-        justify-content: space-between;
-        background: linear-gradient( top);
-        background: url("../assets/images/Portada\ Collections.png");
-        background-size: cover; 
-        background-repeat: no-repeat; 
+    .header-collections{
+        height: 1500px;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../assets/images/Portada\ Collections.png);
+        background-size:cover;
         background-position: center;
     }
 
-    .videoo{
-        display: grid;
-        grid-template-columns: 1fr;
+    .video{
+        display: inline-block;
+        align-items:  center;
+        justify-content: center;
     }
 
     .text{
@@ -398,10 +321,10 @@
         padding-bottom: 15px;
     }
 
-    .video{
-        width: 1620px;
+    .youtubevideo{
+        width: 1830px;
         height: 1068px;
-        margin: 10px 27px;
+        margin: 10px 30px;
     }
 
     .collection1{
@@ -412,7 +335,9 @@
         ". col col ."
         ". imgnprinc imgnprinc ."
         "imgn1 imgn2 imgn3 imgn4";
-        gap: 20px 5px;
+        gap: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         width: 100%;
     }
     .col{
@@ -504,12 +429,6 @@
         gap: 20px 5px;
         width: 100%;
     }
-    .col2{
-        transition: color 0.20s; 
-    }
-    .col2:hover {
-        color: #FFEBCD;
-    }
 
     .col2{
         grid-area: col2;
@@ -518,13 +437,10 @@
         font-family: "Delagothicone";
         color: #CB6D51;
         font-size: 30px;
-    }
-    .col2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         padding: 20px 20px;
     }
+
 
     .imgnprinc2{
         grid-area: imgnprinc2;
@@ -600,13 +516,9 @@
         font-family: "Delagothicone";
         color: #CB6D51;
         font-size: 30px;
-    }
-    .col3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px;
-        transition: color 0.20s; 
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     .col3:hover {
@@ -689,13 +601,9 @@
         font-family: "Delagothicone";
         color: #CB6D51;
         font-size: 30px;
-    }
-    .col4{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px;
-        transition: color 0.20s; 
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     .col4:hover {
@@ -769,6 +677,7 @@
         "imgn19 imgn20 imgn21 imgn22";
         gap: 20px 5px;
         width: 100%;
+        margin-bottom: 32px;
     }
     .col5{
         grid-area: col5;
@@ -777,13 +686,9 @@
         font-family: "Delagothicone";
         color: #CB6D51;
         font-size: 30px;
-    }
-    .col5{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px;
-        transition: color 0.20s; 
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20px;
     }
 
     .col5:hover {
@@ -849,20 +754,18 @@
 
     /*contact */
 
-    .background-img4{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 100vh;
-        background: url("../assets/images/Portada\ Contact.png");
+    .header-contact{
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../assets/images/Portada\ Contact.png);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .contenedor{
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows:auto  ;
+        grid-template-rows:auto;
         grid-template-areas: 
         "tx tx"
         "mapa contactInformation"
@@ -871,38 +774,30 @@
     .tx{
         grid-area: tx;
     }
-    .tx{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .tx{
         font-family: "playfairdisplay-reg";
         font-size: 38px;
         color: #FFEBCD;
         margin-top: 50px;
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .mapa{
         grid-area: mapa;
     }
     .mapa{
-        margin-left: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: center; 
-        align-items: center;     
-        height: 60vh; 
-        flex-direction: column; 
+        justify-self: center;
+        align-self: center; 
+        width: 200opx;    
+        margin-left: 10px;
+
     }
 
     .contactInformationn {
-        display: flex;
-        justify-content: center; 
-        align-items: center;     
-        height: 60vh; 
-        flex-direction: column; 
+        justify-self: center;
+        align-self: center;
     }
 
     .contactinformation {
@@ -918,20 +813,21 @@
         list-style: none;
     }
 
-    .lastpart{
+    .formulario{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows:auto ;
         grid-template-areas: 
         "qya"
-        "form "
+        "form ";
+        margin-bottom: 200px;
     }
     .qya{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .lastpart .qya{
+    .formulario .qya{
         grid-area: qya;
         font-family: "playfairdisplay-reg";
         font-size: 20px;
@@ -940,20 +836,17 @@
         margin-bottom: 20px;
 
     }
-    .form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .form{
-        font-family: "formadjrdisplay";
-        color: #CB6D51;
-        font-size: 19px;
-    }
+
     .form{
         display: flex;
         flex-direction: column;
+        font-family: "formadjrdisplay";
+        color: #CB6D51;
+        font-size: 19px;
+        justify-self: center;
+        align-self: center;
     }
+
     .nm{
         width: 350px;
         height: 25px;
@@ -1003,6 +896,8 @@
         font-size: 16px;
         margin-top: 10px;
         color: #FFEBCD;
+        justify-self: center;
+        align-self: center;
     }
     .reset{
         width: 100px;
@@ -1014,20 +909,18 @@
         margin-top: 10px;
         margin-bottom: 10px;
         color: #FFEBCD;
+        justify-self: center;
+        align-self: center;
     }
 
     /* help*/
 
-    .background-img5{
-        display: flex;
-        align-items: center;
-        padding-bottom: 100vh;
+    .header-help{
+        height: 100vh;
         width: 100%;
-        justify-content: space-between;
-        background: url("../assets/images/PortadaHelp.png");
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../assets/images/PortadaHelp.png);
         background-size: cover;
+        background-position: center;
     }
 
     .help{
@@ -1057,104 +950,277 @@
     .a4:hover{
         text-decoration: underline;
     }
+    .qya{
+        font-family: "formadjrdisplay";
+        color: #FFEBCD;
+        font-size: 25px;
+    }
 
-    .lastpart{
+    .formulario{
+
         margin-bottom: 20px;
     }
 
 
 
+/*INDEX MEDIA QUERI*/
+@media (max-width: 768px){
+    .header{
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .imghomex4{
+        width: 768px;
+    }
+    .fotoytextoHome1{
+        grid-template-columns: 384px 384px;
+        margin-bottom: 10px;
+    }
+    .foto{
+        width:350px ;
+        height: 470px ;
+        margin:auto;
+        }
+    .texto6{
+        overflow-y:hidden;
+        height: auto;
+        margin: auto;
+        font-size: 10px;
+    }
+    .colecciones-vermas{
+        grid-template-columns: 768px;
+        grid-template-rows: 200px 818px;
+        margin-bottom: 20px;
+    }
+    .img1seemore img{
+        width: 748px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-self: start;
+        align-self:auto;
+        }
+}
+@media (max-width: 425px){
+    .header{
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .imghomex4{
+        width: 425px;
+    }
+    .fotoytextoHome1{
+        grid-template-columns: 425px ;
+        grid-template-rows: 400px;
+        margin-bottom: 10px;
+    }
+    .foto{
+        width:200px ;
+        height: 300px ;
+        margin:auto;
+        }
+    .texto6{
+        overflow-y:hidden;
+        height: auto;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .colecciones-vermas{
+        grid-template-columns: 425px;
+        grid-template-rows: 200px 500px;
+        margin-bottom: 20px;
+    }
+    .delagothic{
+        font-size: 18px;
+    }
+    .img1seemore img{
+        width: 415px;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-self: start;
+        align-self:auto;
+        }
+    .hm{
+        font-size: 13px;
+    }
+    .au{
+        font-size: 15px;
+    }
+}
 
 
-    @media (max-width: 768px) {
-        .background-img5 {
-            flex-direction: column;
-            padding-bottom: 50vh;
-            .logo{
-                font-size: 17px;
-            }
-        }
-        
-        .sections {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 15px;
-        }
-    
-        .help {
-            grid-template-columns: 1fr;
-            font-size: 20px;
-        }
-        .lastpart {
-            margin-bottom: 15px;
-                font-size: 12px;
-                .qya{
-                    font-size: 11px;
-                }
-            }
-        .form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .submit, .reset {
-            width: 100px;
-            font-size: 12px;
-        }
-        .footInfo{
-            margin-right: 30px;
-        }
+
+/*ABOUT REI MEDIA QUERI*/
+@media (max-width: 768px){
+    .header-aboutrei{
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+}
+@media (max-width: 425px){
+    .header-aboutrei{
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .corazonAboutRei{
+        width: 30px;
+    }
+    .textAboutRei{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .imagenp1{
+        font-size: 10px;
+    }
+    .parrafofinal{
+        font-size: 12px;
+    }
+}
+
+
+/*COLLECTIONS MEDIA QUERI*/
+@media (max-width: 768px){
+    .header-collections{
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .youtubevideo{
+        width: 750px;
+        height: 400px;
+        margin-left: 10px;
+        margin-right:10px
+    }
+    .col, .col2, .col3, .col4, .col5{
+        font-size: 15px;
+    }
+}
+@media (max-width: 425px){
+    .header-collections{
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .youtubevideo{
+        width: 402px;
+        height: 400px;
+        margin-left: 10px;
+        margin-right:10px
+    }
+}
+
+
+
+/*CONTACT MEDIA QUERI*/
+@media (max-width: 768px){
+    .header-contact{
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .tx{
+        font-size: 20px;
+    }
+    .mapa{
+        width: 384px;
+        height: 300px;
+    }
+    .contactinformation{
+        font-size: 20px;
+    }
+    .whatsapp, .mail, .location{
+        font-size: 15px;
+    }
+    .formulario .qya{
+        font-size: 12px;
+    }
+}
+@media (max-width: 425px){
+    .header-contact{
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .contenedor{
+        grid-template-columns: 425px ;
+        grid-template-rows:150px 300px 200px;
+        grid-template-areas: 
+        "tx "
+        "mapa"
+        "contactInformation"
     }
 
-        @media (max-width: 480px) {
-            .background-img5 {
-                padding-bottom: 30vh;
-                .logo{
-                    font-size: 7px;
-                }
-            }
-            
-            .sections {
-                font-size: 7px;
-            }
-        
-            .help {
-                font-size: 18px;
-                margin-top: 40px;
-                margin-bottom: 40px;
-            }
-            .lastpart {
-                margin-bottom: 10px;
-            }
-            .qya{
-                font-size: 12px;
-                padding: 0px 30px;
-            }
-            .submit, .reset {
-                width: 100px;
-                font-size: 8px;
-            }
-            .form label, .form input, .form select {
-                width: 100%;
-            }
-            .form{
-                width: 50%;
-                margin: 0px auto;
-            }
-            .au{
-                font-size: 12px;
-            }
-            .hm{
-                font-size: 12px;
-            }
-            .footInfo{
-                margin-right: 20px;
-                font-size: 12px;
-            }
-            .iconosFooter{
-                display: flex;
-                justify-content: space-evenly;
-            }
-        }
+    .tx{
+        font-size: 20px;
+    }
+    .mapa{
+        width: 250px;
+        height: 300px;
+    }
+    .contactinformation{
+        font-size: 15px;
+    }
+}
+
