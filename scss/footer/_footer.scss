@@ -1,0 +1,54 @@
+footer {
+    background-color: black;
+    height: 250px;
+}
+
+.hm {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    text-decoration: none;
+    color: #FFEBCD;
+    font-family: "formadjrdisplay";
+    font-size: 19px;
+    margin-bottom: 40px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "formadjrdisplay";
+    color: #CB6D51;
+    font-size: 19px;
+}
+
+.au:hover {
+    text-decoration: underline;
+}
+
+.un {
+    font-family: "formadjrdisplay";
+    color: #CB6D51;
+    background-color: #FFEBCD;
+    font-size: 15px;
+}
+
+.iconosFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    .socialmedia {
+        justify-self: center;
+        align-self: center;
+
+        &:hover {
+            transform: scale(2, 2);
+        }
+    }
+}

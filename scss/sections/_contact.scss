@@ -1,0 +1,114 @@
+.header-contact {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ Contact.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "tx tx"
+        "mapa contactInformation";
+
+    .tx {
+        grid-area: tx;
+        font-family: "playfairdisplay-reg";
+        font-size: 38px;
+        color: #FFEBCD;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        justify-self: center;
+        align-self: center;
+        width: 600px;
+        margin-left: 10px;
+    }
+
+    .contactInformationn {
+        justify-self: center;
+        align-self: center;
+
+        .contactinformation {
+            font-family: "delagothicone";
+            font-size: 38px;
+            color: #CB6D51;
+        }
+
+        .whatsapp, .mail, .location {
+            font-family: "playfairdisplay-reg";
+            color: #FFEBCD;
+            font-size: 22px;
+            gap: 5px;
+            list-style: none;
+        }
+    }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "qya"
+        "form";
+    margin-bottom: 200px;
+
+    .qya {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: qya;
+        font-family: "playfairdisplay-reg";
+        font-size: 20px;
+        color: #FFEBCD;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        font-family: "formadjrdisplay";
+        color: #CB6D51;
+        font-size: 19px;
+        justify-self: center;
+        align-self: center;
+
+        .nm, .lastname, .adress, .country, .question {
+            width: 350px;
+            height: 25px;
+            border-radius: 20px;
+            background-color: #FFEBCD;
+            font-family: "formadjrdisplay";
+            font-size: 16px;
+            &.question {
+                height: 90px;
+                gap: 10px;
+            }
+        }
+
+        .submit, .reset {
+            width: 100px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: #CB6D51;
+            font-family: "formadjrdisplay";
+            font-size: 16px;
+            margin-top: 10px;
+            color: #FFEBCD;
+            justify-self: center;
+            align-self: center;
+            &.reset {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

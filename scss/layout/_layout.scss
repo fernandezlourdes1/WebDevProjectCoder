@@ -1,0 +1,257 @@
+@media (max-width: $max-width-768) {
+    .header {
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+    .imghomex4 {
+        width: 768px;
+    }
+    .fotoytextoHome1 {
+        grid-template-columns: 384px 384px;
+        margin-bottom: 10px;
+    }
+    .foto {
+        width: 350px;
+        height: 470px;
+        margin: auto;
+    }
+    .texto6 {
+        overflow-y: hidden;
+        height: auto;
+        margin: auto;
+        font-size: 10px;
+    }
+    .colecciones-vermas {
+        grid-template-columns: 768px;
+        grid-template-rows: 200px 818px;
+        margin-bottom: 20px;
+    }
+    .img1seemore img {
+        width: 748px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-self: start;
+        align-self: auto;
+    }
+}
+
+@media (max-width: $max-width-425) {
+    .header {
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .imghomex4 {
+        width: 425px;
+    }
+    .fotoytextoHome1 {
+        grid-template-columns: 425px;
+        grid-template-rows: 400px;
+        margin-bottom: 10px;
+    }
+    .foto {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+    }
+    .texto6 {
+        overflow-y: hidden;
+        height: auto;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .colecciones-vermas {
+        grid-template-columns: 425px;
+        grid-template-rows: 200px 500px;
+        margin-bottom: 20px;
+    }
+    .delagothic {
+        font-size: 18px;
+    }
+    .img1seemore img {
+        width: 415px;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-self: start;
+        align-self: auto;
+    }
+    .hm {
+        font-size: 13px;
+    }
+    .au {
+        font-size: 15px;
+    }
+}
+
+/* ABOUT REI MEDIA QUERIES */
+@media (max-width: $max-width-768) {
+    .header-aboutrei {
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: $max-width-425) {
+    .header-aboutrei {
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .corazonAboutRei {
+        width: 30px;
+    }
+    .textAboutRei {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .imagenp1 {
+        font-size: 10px;
+    }
+    .parrafofinal {
+        font-size: 12px;
+    }
+}
+
+/* COLLECTIONS MEDIA QUERIES */
+@media (max-width: $max-width-768) {
+    .header-collections {
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .youtubevideo {
+        width: 750px;
+        height: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .col, .col2, .col3, .col4, .col5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: $max-width-425) {
+    .header-collections {
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .youtubevideo {
+        width: 402px;
+        height: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* CONTACT MEDIA QUERIES */
+@media (max-width: $max-width-768) {
+    .header-contact {
+        background-position: top;
+        height: 100vh;
+        width: 768px;
+        background-repeat: no-repeat;
+    }
+    .tx {
+        font-size: 20px;
+    }
+    .mapa {
+        width: 384px;
+        height: 300px;
+    }
+    .contactinformation {
+        font-size: 20px;
+    }
+    .whatsapp, .mail, .location {
+        font-size: 15px;
+    }
+    .formulario .qya {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: $max-width-425) {
+    .header-contact {
+        background-position: top;
+        height: 100%;
+        width: 425px;
+        background-repeat: no-repeat;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .contenedor {
+        grid-template-columns: 425px;
+        grid-template-rows: 150px 300px 200px;
+        grid-template-areas: 
+        "tx"
+        "mapa"
+        "contactInformation";
+    }
+    .tx {
+        font-size: 20px;
+    }
+    .mapa {
+        width: 250px;
+        height: 300px;
+    }
+    .contactinformation {
+        font-size: 15px;
+    }
+}

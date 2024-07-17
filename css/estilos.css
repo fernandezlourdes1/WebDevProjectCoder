@@ -1,0 +1,887 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+.header-aboutrei {
+  height: 2550px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ About\ Rei.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.parrafoycorazones {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.corazonAboutRei {
+  width: 200px;
+}
+
+.textAboutRei {
+  font-family: "playfairdisplay-reg";
+  color: #FFEBCD;
+  font-size: 30px;
+  padding: 0px 40px;
+}
+
+.fotocInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.imagenp {
+  width: 80%;
+  margin: 40px 40px;
+  justify-items: center;
+  align-items: center;
+}
+.imagenp1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "playfairdisplay-reg";
+  color: #FFEBCD;
+  font-size: 22px;
+}
+
+.parrafofinal {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "delagothicone";
+  color: #CB6D51;
+  font-size: 35px;
+  padding: 30px 60px;
+}
+
+.Images-AboutReix4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+.Images-AboutReix4 .f1, .Images-AboutReix4 .f2, .Images-AboutReix4 .f3, .Images-AboutReix4 .f4 {
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+.Images-AboutReix4 .f1:hover, .Images-AboutReix4 .f2:hover, .Images-AboutReix4 .f3:hover, .Images-AboutReix4 .f4:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.header-collections {
+  height: 1500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ Collections.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.video {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: "playfairdisplay-reg";
+  font-size: 40px;
+  color: #FFEBCD;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.youtubevideo {
+  width: 1830px;
+  height: 1068px;
+  margin: 10px 30px;
+}
+
+.collection1, .collection2, .collection3, .collection4, .collection5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px 5px;
+  width: 100%;
+}
+.collection1 .col, .collection1 .col2, .collection1 .col3, .collection1 .col4, .collection1 .col5, .collection2 .col, .collection2 .col2, .collection2 .col3, .collection2 .col4, .collection2 .col5, .collection3 .col, .collection3 .col2, .collection3 .col3, .collection3 .col4, .collection3 .col5, .collection4 .col, .collection4 .col2, .collection4 .col3, .collection4 .col4, .collection4 .col5, .collection5 .col, .collection5 .col2, .collection5 .col3, .collection5 .col4, .collection5 .col5 {
+  font-family: "Delagothicone";
+  color: #CB6D51;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  transition: color 0.2s;
+  text-align: center;
+}
+.collection1 .col:hover, .collection1 .col2:hover, .collection1 .col3:hover, .collection1 .col4:hover, .collection1 .col5:hover, .collection2 .col:hover, .collection2 .col2:hover, .collection2 .col3:hover, .collection2 .col4:hover, .collection2 .col5:hover, .collection3 .col:hover, .collection3 .col2:hover, .collection3 .col3:hover, .collection3 .col4:hover, .collection3 .col5:hover, .collection4 .col:hover, .collection4 .col2:hover, .collection4 .col3:hover, .collection4 .col4:hover, .collection4 .col5:hover, .collection5 .col:hover, .collection5 .col2:hover, .collection5 .col3:hover, .collection5 .col4:hover, .collection5 .col5:hover {
+  color: #FFEBCD;
+}
+.collection1 .imgnprinc, .collection1 .imgnprinc2, .collection1 .imgnprinc3, .collection1 .imgnprinc4, .collection1 .imgnprinc5,
+.collection1 .imgn1, .collection1 .imgn2, .collection1 .imgn3, .collection1 .imgn4,
+.collection1 .imgn6, .collection1 .imgn7, .collection1 .imgn8, .collection1 .imgn9,
+.collection1 .imgn11, .collection1 .imgn12, .collection1 .imgn13, .collection1 .imgn14,
+.collection1 .imgn15, .collection1 .imgn16, .collection1 .imgn17, .collection1 .imgn18,
+.collection1 .imgn19, .collection1 .imgn20, .collection1 .imgn21, .collection1 .imgn22, .collection2 .imgnprinc, .collection2 .imgnprinc2, .collection2 .imgnprinc3, .collection2 .imgnprinc4, .collection2 .imgnprinc5,
+.collection2 .imgn1, .collection2 .imgn2, .collection2 .imgn3, .collection2 .imgn4,
+.collection2 .imgn6, .collection2 .imgn7, .collection2 .imgn8, .collection2 .imgn9,
+.collection2 .imgn11, .collection2 .imgn12, .collection2 .imgn13, .collection2 .imgn14,
+.collection2 .imgn15, .collection2 .imgn16, .collection2 .imgn17, .collection2 .imgn18,
+.collection2 .imgn19, .collection2 .imgn20, .collection2 .imgn21, .collection2 .imgn22, .collection3 .imgnprinc, .collection3 .imgnprinc2, .collection3 .imgnprinc3, .collection3 .imgnprinc4, .collection3 .imgnprinc5,
+.collection3 .imgn1, .collection3 .imgn2, .collection3 .imgn3, .collection3 .imgn4,
+.collection3 .imgn6, .collection3 .imgn7, .collection3 .imgn8, .collection3 .imgn9,
+.collection3 .imgn11, .collection3 .imgn12, .collection3 .imgn13, .collection3 .imgn14,
+.collection3 .imgn15, .collection3 .imgn16, .collection3 .imgn17, .collection3 .imgn18,
+.collection3 .imgn19, .collection3 .imgn20, .collection3 .imgn21, .collection3 .imgn22, .collection4 .imgnprinc, .collection4 .imgnprinc2, .collection4 .imgnprinc3, .collection4 .imgnprinc4, .collection4 .imgnprinc5,
+.collection4 .imgn1, .collection4 .imgn2, .collection4 .imgn3, .collection4 .imgn4,
+.collection4 .imgn6, .collection4 .imgn7, .collection4 .imgn8, .collection4 .imgn9,
+.collection4 .imgn11, .collection4 .imgn12, .collection4 .imgn13, .collection4 .imgn14,
+.collection4 .imgn15, .collection4 .imgn16, .collection4 .imgn17, .collection4 .imgn18,
+.collection4 .imgn19, .collection4 .imgn20, .collection4 .imgn21, .collection4 .imgn22, .collection5 .imgnprinc, .collection5 .imgnprinc2, .collection5 .imgnprinc3, .collection5 .imgnprinc4, .collection5 .imgnprinc5,
+.collection5 .imgn1, .collection5 .imgn2, .collection5 .imgn3, .collection5 .imgn4,
+.collection5 .imgn6, .collection5 .imgn7, .collection5 .imgn8, .collection5 .imgn9,
+.collection5 .imgn11, .collection5 .imgn12, .collection5 .imgn13, .collection5 .imgn14,
+.collection5 .imgn15, .collection5 .imgn16, .collection5 .imgn17, .collection5 .imgn18,
+.collection5 .imgn19, .collection5 .imgn20, .collection5 .imgn21, .collection5 .imgn22 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 5px;
+}
+.collection1 .imgnprinc:hover, .collection1 .imgnprinc2:hover, .collection1 .imgnprinc3:hover, .collection1 .imgnprinc4:hover, .collection1 .imgnprinc5:hover,
+.collection1 .imgn1:hover, .collection1 .imgn2:hover, .collection1 .imgn3:hover, .collection1 .imgn4:hover,
+.collection1 .imgn6:hover, .collection1 .imgn7:hover, .collection1 .imgn8:hover, .collection1 .imgn9:hover,
+.collection1 .imgn11:hover, .collection1 .imgn12:hover, .collection1 .imgn13:hover, .collection1 .imgn14:hover,
+.collection1 .imgn15:hover, .collection1 .imgn16:hover, .collection1 .imgn17:hover, .collection1 .imgn18:hover,
+.collection1 .imgn19:hover, .collection1 .imgn20:hover, .collection1 .imgn21:hover, .collection1 .imgn22:hover, .collection2 .imgnprinc:hover, .collection2 .imgnprinc2:hover, .collection2 .imgnprinc3:hover, .collection2 .imgnprinc4:hover, .collection2 .imgnprinc5:hover,
+.collection2 .imgn1:hover, .collection2 .imgn2:hover, .collection2 .imgn3:hover, .collection2 .imgn4:hover,
+.collection2 .imgn6:hover, .collection2 .imgn7:hover, .collection2 .imgn8:hover, .collection2 .imgn9:hover,
+.collection2 .imgn11:hover, .collection2 .imgn12:hover, .collection2 .imgn13:hover, .collection2 .imgn14:hover,
+.collection2 .imgn15:hover, .collection2 .imgn16:hover, .collection2 .imgn17:hover, .collection2 .imgn18:hover,
+.collection2 .imgn19:hover, .collection2 .imgn20:hover, .collection2 .imgn21:hover, .collection2 .imgn22:hover, .collection3 .imgnprinc:hover, .collection3 .imgnprinc2:hover, .collection3 .imgnprinc3:hover, .collection3 .imgnprinc4:hover, .collection3 .imgnprinc5:hover,
+.collection3 .imgn1:hover, .collection3 .imgn2:hover, .collection3 .imgn3:hover, .collection3 .imgn4:hover,
+.collection3 .imgn6:hover, .collection3 .imgn7:hover, .collection3 .imgn8:hover, .collection3 .imgn9:hover,
+.collection3 .imgn11:hover, .collection3 .imgn12:hover, .collection3 .imgn13:hover, .collection3 .imgn14:hover,
+.collection3 .imgn15:hover, .collection3 .imgn16:hover, .collection3 .imgn17:hover, .collection3 .imgn18:hover,
+.collection3 .imgn19:hover, .collection3 .imgn20:hover, .collection3 .imgn21:hover, .collection3 .imgn22:hover, .collection4 .imgnprinc:hover, .collection4 .imgnprinc2:hover, .collection4 .imgnprinc3:hover, .collection4 .imgnprinc4:hover, .collection4 .imgnprinc5:hover,
+.collection4 .imgn1:hover, .collection4 .imgn2:hover, .collection4 .imgn3:hover, .collection4 .imgn4:hover,
+.collection4 .imgn6:hover, .collection4 .imgn7:hover, .collection4 .imgn8:hover, .collection4 .imgn9:hover,
+.collection4 .imgn11:hover, .collection4 .imgn12:hover, .collection4 .imgn13:hover, .collection4 .imgn14:hover,
+.collection4 .imgn15:hover, .collection4 .imgn16:hover, .collection4 .imgn17:hover, .collection4 .imgn18:hover,
+.collection4 .imgn19:hover, .collection4 .imgn20:hover, .collection4 .imgn21:hover, .collection4 .imgn22:hover, .collection5 .imgnprinc:hover, .collection5 .imgnprinc2:hover, .collection5 .imgnprinc3:hover, .collection5 .imgnprinc4:hover, .collection5 .imgnprinc5:hover,
+.collection5 .imgn1:hover, .collection5 .imgn2:hover, .collection5 .imgn3:hover, .collection5 .imgn4:hover,
+.collection5 .imgn6:hover, .collection5 .imgn7:hover, .collection5 .imgn8:hover, .collection5 .imgn9:hover,
+.collection5 .imgn11:hover, .collection5 .imgn12:hover, .collection5 .imgn13:hover, .collection5 .imgn14:hover,
+.collection5 .imgn15:hover, .collection5 .imgn16:hover, .collection5 .imgn17:hover, .collection5 .imgn18:hover,
+.collection5 .imgn19:hover, .collection5 .imgn20:hover, .collection5 .imgn21:hover, .collection5 .imgn22:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.collection1 {
+  grid-template-areas: ". col col ." ". imgnprinc imgnprinc ." "imgn1 imgn2 imgn3 imgn4";
+}
+.collection1 .col {
+  grid-area: col;
+}
+.collection1 .imgnprinc {
+  grid-area: imgnprinc;
+}
+.collection1 .imgn1 {
+  grid-area: imgn1;
+}
+.collection1 .imgn2 {
+  grid-area: imgn2;
+}
+.collection1 .imgn3 {
+  grid-area: imgn3;
+}
+.collection1 .imgn4 {
+  grid-area: imgn4;
+}
+
+.collection2 {
+  grid-template-areas: ". col2 col2 ." ". imgnprinc2 imgnprinc2 ." "imgn6 imgn7 imgn8 imgn9";
+}
+.collection2 .col2 {
+  grid-area: col2;
+}
+.collection2 .imgnprinc2 {
+  grid-area: imgnprinc2;
+}
+.collection2 .imgn6 {
+  grid-area: imgn6;
+}
+.collection2 .imgn7 {
+  grid-area: imgn7;
+}
+.collection2 .imgn8 {
+  grid-area: imgn8;
+}
+.collection2 .imgn9 {
+  grid-area: imgn9;
+}
+
+.collection3 {
+  grid-template-areas: ". col3 col3 ." ". imgnprinc3 imgnprinc3 ." "imgn11 imgn12 imgn13 imgn14";
+}
+.collection3 .col3 {
+  grid-area: col3;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.collection3 .imgnprinc3 {
+  grid-area: imgnprinc3;
+}
+.collection3 .imgn11 {
+  grid-area: imgn11;
+}
+.collection3 .imgn12 {
+  grid-area: imgn12;
+}
+.collection3 .imgn13 {
+  grid-area: imgn13;
+}
+.collection3 .imgn14 {
+  grid-area: imgn14;
+}
+
+.collection4 {
+  grid-template-areas: ". col4 col4 ." ". imgnprinc4 imgnprinc4 ." "imgn15 imgn16 imgn17 imgn18";
+}
+.collection4 .col4 {
+  grid-area: col4;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.collection4 .imgnprinc4 {
+  grid-area: imgnprinc4;
+}
+.collection4 .imgn15 {
+  grid-area: imgn15;
+}
+.collection4 .imgn16 {
+  grid-area: imgn16;
+}
+.collection4 .imgn17 {
+  grid-area: imgn17;
+}
+.collection4 .imgn18 {
+  grid-area: imgn18;
+}
+
+.collection5 {
+  grid-template-areas: ". col5 col5 ." ". imgnprinc5 imgnprinc5 ." "imgn19 imgn20 imgn21 imgn22";
+  margin-bottom: 32px;
+}
+.collection5 .col5 {
+  grid-area: col5;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.collection5 .imgnprinc5 {
+  grid-area: imgnprinc5;
+}
+.collection5 .imgn19 {
+  grid-area: imgn19;
+}
+.collection5 .imgn20 {
+  grid-area: imgn20;
+}
+.collection5 .imgn21 {
+  grid-area: imgn21;
+}
+.collection5 .imgn22 {
+  grid-area: imgn22;
+}
+
+.header-contact {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ Contact.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "tx tx" "mapa contactInformation";
+}
+.contenedor .tx {
+  grid-area: tx;
+  font-family: "playfairdisplay-reg";
+  font-size: 38px;
+  color: #FFEBCD;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contenedor .mapa {
+  grid-area: mapa;
+  justify-self: center;
+  align-self: center;
+  width: 600px;
+  margin-left: 10px;
+}
+.contenedor .contactInformationn {
+  justify-self: center;
+  align-self: center;
+}
+.contenedor .contactInformationn .contactinformation {
+  font-family: "delagothicone";
+  font-size: 38px;
+  color: #CB6D51;
+}
+.contenedor .contactInformationn .whatsapp, .contenedor .contactInformationn .mail, .contenedor .contactInformationn .location {
+  font-family: "playfairdisplay-reg";
+  color: #FFEBCD;
+  font-size: 22px;
+  gap: 5px;
+  list-style: none;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "qya" "form";
+  margin-bottom: 200px;
+}
+.formulario .qya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: qya;
+  font-family: "playfairdisplay-reg";
+  font-size: 20px;
+  color: #FFEBCD;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.formulario .form {
+  display: flex;
+  flex-direction: column;
+  font-family: "formadjrdisplay";
+  color: #CB6D51;
+  font-size: 19px;
+  justify-self: center;
+  align-self: center;
+}
+.formulario .form .nm, .formulario .form .lastname, .formulario .form .adress, .formulario .form .country, .formulario .form .question {
+  width: 350px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #FFEBCD;
+  font-family: "formadjrdisplay";
+  font-size: 16px;
+}
+.formulario .form .nm.question, .formulario .form .lastname.question, .formulario .form .adress.question, .formulario .form .country.question, .formulario .form .question.question {
+  height: 90px;
+  gap: 10px;
+}
+.formulario .form .submit, .formulario .form .reset {
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #CB6D51;
+  font-family: "formadjrdisplay";
+  font-size: 16px;
+  margin-top: 10px;
+  color: #FFEBCD;
+  justify-self: center;
+  align-self: center;
+}
+.formulario .form .submit.reset, .formulario .form .reset.reset {
+  margin-bottom: 10px;
+}
+
+/* help */
+.header-help {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/PortadaHelp.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.help {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "ul1 ul2";
+  text-align: center;
+  font-family: "formadjrdisplay";
+  color: #CB6D51;
+  font-size: 25px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.help .a1:hover,
+.help .a2:hover,
+.help .a3:hover,
+.help .a4:hover {
+  text-decoration: underline;
+}
+.help .qya {
+  font-family: "formadjrdisplay";
+  color: #FFEBCD;
+  font-size: 25px;
+}
+
+.formulario {
+  margin-bottom: 20px;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portadahome.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo {
+  font-family: "delagothicone";
+  font-size: 80px;
+  color: #CB6D51;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+}
+nav ul li a {
+  color: #CB6D51;
+  font-family: "formadjrdisplay";
+  font-size: 22px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline #CB6D51;
+}
+nav ul li:hover {
+  text-decoration: underline #CB6D51;
+}
+
+.imghomex4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: fit-content;
+  width: 100%;
+  object-fit: contain;
+  margin: 10px 0px;
+  gap: 5px;
+}
+
+.foto1 {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+.foto1:hover {
+  box-sizing: border-box;
+  filter: blur(2px);
+}
+
+.fotoytextoHome1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.foto {
+  margin-left: 5px;
+  height: 705px;
+}
+
+.texto6 {
+  margin: auto 0px;
+  font-family: "playfairdisplay-reg";
+  color: #FFEBCD;
+  overflow-y: scroll;
+  font-size: 25px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.colecciones-vermas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  align-content: center;
+}
+
+.delagothic {
+  font-family: "delagothicone";
+  font-size: 28px;
+  color: #CB6D51;
+}
+
+.buttom {
+  font-family: "formadjrdisplay";
+  text-decoration: none;
+  background-color: rgb(22, 22, 22);
+  color: #FFEBCD;
+  background: none;
+  border: none;
+}
+.buttom:hover {
+  text-decoration: underline;
+}
+
+.img1seemore {
+  max-width: 100%;
+  margin-right: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.imagenfinal {
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@font-face {
+  font-family: "delagothicone";
+  src: url(../assets/fonts/DelaGothicOne-Regular.ttf);
+}
+@font-face {
+  font-family: "formadjrdisplay";
+  src: url(../assets/fonts/Forma\ DJR\ Display.ttf);
+}
+@font-face {
+  font-family: "playfairdisplay-reg";
+  src: url(../assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+footer {
+  background-color: black;
+  height: 250px;
+}
+
+.hm {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  text-decoration: none;
+  color: #FFEBCD;
+  font-family: "formadjrdisplay";
+  font-size: 19px;
+  margin-bottom: 40px;
+}
+.hm:hover {
+  text-decoration: underline;
+}
+
+.footInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "formadjrdisplay";
+  color: #CB6D51;
+  font-size: 19px;
+}
+
+.au:hover {
+  text-decoration: underline;
+}
+
+.un {
+  font-family: "formadjrdisplay";
+  color: #CB6D51;
+  background-color: #FFEBCD;
+  font-size: 15px;
+}
+
+.iconosFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.iconosFooter .socialmedia {
+  justify-self: center;
+  align-self: center;
+}
+.iconosFooter .socialmedia:hover {
+  transform: scale(2, 2);
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
+  }
+  .titulo {
+    font-size: 25px;
+  }
+  .imghomex4 {
+    width: 768px;
+  }
+  .fotoytextoHome1 {
+    grid-template-columns: 384px 384px;
+    margin-bottom: 10px;
+  }
+  .foto {
+    width: 350px;
+    height: 470px;
+    margin: auto;
+  }
+  .texto6 {
+    overflow-y: hidden;
+    height: auto;
+    margin: auto;
+    font-size: 10px;
+  }
+  .colecciones-vermas {
+    grid-template-columns: 768px;
+    grid-template-rows: 200px 818px;
+    margin-bottom: 20px;
+  }
+  .img1seemore img {
+    width: 748px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-self: start;
+    align-self: auto;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .imghomex4 {
+    width: 425px;
+  }
+  .fotoytextoHome1 {
+    grid-template-columns: 425px;
+    grid-template-rows: 400px;
+    margin-bottom: 10px;
+  }
+  .foto {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+  }
+  .texto6 {
+    overflow-y: hidden;
+    height: auto;
+    margin: 5px;
+    font-size: 10px;
+  }
+  .colecciones-vermas {
+    grid-template-columns: 425px;
+    grid-template-rows: 200px 500px;
+    margin-bottom: 20px;
+  }
+  .delagothic {
+    font-size: 18px;
+  }
+  .img1seemore img {
+    width: 415px;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-self: start;
+    align-self: auto;
+  }
+  .hm {
+    font-size: 13px;
+  }
+  .au {
+    font-size: 15px;
+  }
+}
+/* ABOUT REI MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header-aboutrei {
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
+  }
+  .titulo {
+    font-size: 25px;
+  }
+}
+@media (max-width: 425px) {
+  .header-aboutrei {
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .corazonAboutRei {
+    width: 30px;
+  }
+  .textAboutRei {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .imagenp1 {
+    font-size: 10px;
+  }
+  .parrafofinal {
+    font-size: 12px;
+  }
+}
+/* COLLECTIONS MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header-collections {
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
+  }
+  .titulo {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .youtubevideo {
+    width: 750px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .col, .col2, .col3, .col4, .col5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .header-collections {
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 10px;
+  }
+  .youtubevideo {
+    width: 402px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* CONTACT MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header-contact {
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
+  }
+  .tx {
+    font-size: 20px;
+  }
+  .mapa {
+    width: 384px;
+    height: 300px;
+  }
+  .contactinformation {
+    font-size: 20px;
+  }
+  .whatsapp, .mail, .location {
+    font-size: 15px;
+  }
+  .formulario .qya {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .header-contact {
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .contenedor {
+    grid-template-columns: 425px;
+    grid-template-rows: 150px 300px 200px;
+    grid-template-areas: "tx" "mapa" "contactInformation";
+  }
+  .tx {
+    font-size: 20px;
+  }
+  .mapa {
+    width: 250px;
+    height: 300px;
+  }
+  .contactinformation {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

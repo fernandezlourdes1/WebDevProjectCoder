@@ -1,0 +1,142 @@
+.header-collections {
+    height: 1500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ Collections.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.video {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-family: "playfairdisplay-reg";
+    font-size: 40px;
+    color: #FFEBCD;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.youtubevideo {
+    width: 1830px;
+    height: 1068px;
+    margin: 10px 30px;
+}
+
+.collection1, .collection2, .collection3, .collection4, .collection5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px 5px;
+    width: 100%;
+
+    .col, .col2, .col3, .col4, .col5 {
+        font-family: "Delagothicone";
+        color: #CB6D51;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+        transition: color 0.20s;
+        text-align: center;
+
+        &:hover {
+            color: #FFEBCD;
+        }
+    }
+
+    .imgnprinc, .imgnprinc2, .imgnprinc3, .imgnprinc4, .imgnprinc5,
+    .imgn1, .imgn2, .imgn3, .imgn4,
+    .imgn6, .imgn7, .imgn8, .imgn9,
+    .imgn11, .imgn12, .imgn13, .imgn14,
+    .imgn15, .imgn16, .imgn17, .imgn18,
+    .imgn19, .imgn20, .imgn21, .imgn22 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 5px;
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            overflow: hidden;
+        }
+    }
+}
+
+.collection1 {
+    grid-template-areas: 
+        ". col col ."
+        ". imgnprinc imgnprinc ."
+        "imgn1 imgn2 imgn3 imgn4";
+
+    .col { grid-area: col; }
+    .imgnprinc { grid-area: imgnprinc; }
+    .imgn1 { grid-area: imgn1; }
+    .imgn2 { grid-area: imgn2; }
+    .imgn3 { grid-area: imgn3; }
+    .imgn4 { grid-area: imgn4; }
+}
+
+.collection2 {
+    grid-template-areas: 
+        ". col2 col2 ."
+        ". imgnprinc2 imgnprinc2 ."
+        "imgn6 imgn7 imgn8 imgn9";
+
+    .col2 { grid-area: col2; }
+    .imgnprinc2 { grid-area: imgnprinc2; }
+    .imgn6 { grid-area: imgn6; }
+    .imgn7 { grid-area: imgn7; }
+    .imgn8 { grid-area: imgn8; }
+    .imgn9 { grid-area: imgn9; }
+}
+
+.collection3 {
+    grid-template-areas: 
+        ". col3 col3 ."
+        ". imgnprinc3 imgnprinc3 ."
+        "imgn11 imgn12 imgn13 imgn14";
+
+    .col3 { grid-area: col3; margin-top: 25px; margin-bottom: 20px; }
+    .imgnprinc3 { grid-area: imgnprinc3; }
+    .imgn11 { grid-area: imgn11; }
+    .imgn12 { grid-area: imgn12; }
+    .imgn13 { grid-area: imgn13; }
+    .imgn14 { grid-area: imgn14; }
+}
+
+.collection4 {
+    grid-template-areas: 
+        ". col4 col4 ."
+        ". imgnprinc4 imgnprinc4 ."
+        "imgn15 imgn16 imgn17 imgn18";
+
+    .col4 { grid-area: col4; margin-top: 30px; margin-bottom: 20px; }
+    .imgnprinc4 { grid-area: imgnprinc4; }
+    .imgn15 { grid-area: imgn15; }
+    .imgn16 { grid-area: imgn16; }
+    .imgn17 { grid-area: imgn17; }
+    .imgn18 { grid-area: imgn18; }
+}
+
+.collection5 {
+    grid-template-areas: 
+        ". col5 col5 ."
+        ". imgnprinc5 imgnprinc5 ."
+        "imgn19 imgn20 imgn21 imgn22";
+
+    margin-bottom: 32px;
+
+    .col5 { grid-area: col5; margin-top: 30px; margin-left: 20px; }
+    .imgnprinc5 { grid-area: imgnprinc5; }
+    .imgn19 { grid-area: imgn19; }
+    .imgn20 { grid-area: imgn20; }
+    .imgn21 { grid-area: imgn21; }
+    .imgn22 { grid-area: imgn22; }
+}

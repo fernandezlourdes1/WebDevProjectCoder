@@ -1,0 +1,130 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portadahome.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    font-family: "delagothicone";
+    font-size: 80px;
+    color: $color-naranja;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 10px;
+
+            a {
+                color: $color-naranja;
+                font-family: "formadjrdisplay";
+                font-size: 22px;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline $color-naranja;
+                }
+            }
+
+            &:hover {
+                text-decoration: underline $color-naranja;
+            }
+        }
+    }
+}
+
+.imghomex4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: fit-content;
+    width: 100%;
+    object-fit: contain;
+    margin: 10px 0px;
+    gap: 5px;
+}
+
+.foto1 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+
+    &:hover {
+        box-sizing: border-box;
+        filter: blur(2px);
+    }
+}
+
+.fotoytextoHome1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.foto {
+    margin-left: 5px;
+    height: 705px;
+}
+
+.texto6 {
+    margin: auto 0px;
+    font-family: "playfairdisplay-reg";
+    color: $color-crema;
+    overflow-y: scroll;
+    font-size: 25px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.colecciones-vermas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    align-content: center;
+}
+
+.delagothic {
+    font-family: "delagothicone";
+    font-size: 28px;
+    color: $color-naranja;
+}
+
+.buttom {
+    font-family: "formadjrdisplay";
+    text-decoration: none;
+    background-color: rgb(22, 22, 22);
+    color: $color-crema;
+    background: none;
+    border: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.img1seemore {
+    max-width: 100%;
+    margin-right: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.imagenfinal {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+/* help */
+
+.header-help {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/PortadaHelp.png);
+    background-size: cover;
+    background-position: center;
+}
+
+    .help {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "ul1 ul2";
+                text-align: center;
+                font-family: "formadjrdisplay";
+                color: #CB6D51;
+                font-size: 25px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                .a1:hover,
+                .a2:hover,
+                .a3:hover,
+                .a4:hover {
+                text-decoration: underline;
+                }
+
+    .qya {
+        font-family: "formadjrdisplay";
+        color: #FFEBCD;
+        font-size: 25px;
+        }   
+    }
+
+    .formulario {
+        margin-bottom: 20px;
+    }

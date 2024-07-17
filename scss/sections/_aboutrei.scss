@@ -1,0 +1,76 @@
+.header-aboutrei {
+    height: 2550px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ About\ Rei.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.parrafoycorazones {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.corazonAboutRei {
+    width: 200px;
+}
+
+.textAboutRei {
+    font-family: "playfairdisplay-reg";
+    color: #FFEBCD;
+    font-size: 30px;
+    padding: 0px 40px;
+}
+
+.fotocInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.imagenp {
+    width: 80%;
+    margin: 40px 40px;
+    justify-items: center;
+    align-items: center;
+
+    &1 {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-family: "playfairdisplay-reg";
+        color: #FFEBCD;
+        font-size: 22px;
+    }
+}
+
+.parrafofinal {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "delagothicone";
+    color: #CB6D51;
+    font-size: 35px;
+    padding: 30px 60px;
+}
+
+.Images-AboutReix4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 5px;
+    width: 100%;
+
+    .f1, .f2, .f3, .f4 {
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            overflow: hidden;
+        }
+    }
+}
