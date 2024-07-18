@@ -11,7 +11,7 @@ body {
 .header-aboutrei {
   height: 2550px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ About\ Rei.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ About\ Rei.png);
   background-size: cover;
   background-position: center;
 }
@@ -85,7 +85,7 @@ body {
 .header-collections {
   height: 1500px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ Collections.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ Collections.png);
   background-size: cover;
   background-position: center;
 }
@@ -314,7 +314,7 @@ body {
 .header-contact {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portada\ Contact.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ Contact.png);
   background-size: cover;
   background-position: center;
 }
@@ -417,7 +417,7 @@ body {
 .header-help {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/PortadaHelp.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/PortadaHelp.png);
   background-size: cover;
   background-position: center;
 }
@@ -452,7 +452,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/Portadahome.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portadahome.png);
   background-size: cover;
   background-position: center;
 }
