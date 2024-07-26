@@ -1,3 +1,4 @@
+/* INDEX REI MEDIA QUERIES */
 @media (max-width: $max-width-768) {
     .header {
         background-position: top;
@@ -42,19 +43,18 @@
 
 @media (max-width: $max-width-425) {
     .header {
-        background-position: top;
-        height: 100%;
-        width: 425px;
-        background-repeat: no-repeat;
+        display: none;
     }
-    nav ul li {
+    .boostrap{
         display: block;
-    }
-    nav ul li a {
-        font-size: 10px;
-    }
-    .titulo {
-        font-size: 20px;
+        .text-whiteh4{
+            font-family: "delagothicone";
+            color: $color-naranja;
+        }
+        .secciones{
+            text-decoration: none;
+            color: $color-crema;
+        }
     }
     .imghomex4 {
         width: 425px;
@@ -113,19 +113,7 @@
 
 @media (max-width: $max-width-425) {
     .header-aboutrei {
-        background-position: top;
-        height: 100%;
-        width: 425px;
-        background-repeat: no-repeat;
-    }
-    nav ul li {
-        display: block;
-    }
-    nav ul li a {
-        font-size: 10px;
-    }
-    .titulo {
-        font-size: 20px;
+        display: none;
     }
     .corazonAboutRei {
         width: 30px;
@@ -169,28 +157,16 @@
 
 @media (max-width: $max-width-425) {
     .header-collections {
-        background-position: top;
-        height: 100%;
-        width: 425px;
-        background-repeat: no-repeat;
-    }
-    nav ul li {
-        display: block;
-    }
-    nav ul li a {
-        font-size: 10px;
-    }
-    .titulo {
-        font-size: 20px;
+        display: none;
     }
     .text {
-        font-size: 10px;
+        font-size: 13px;
     }
     .youtubevideo {
-        width: 402px;
-        height: 400px;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 390px;
+        height: 390px;
+        margin-left: 15px;
+        margin-right: 5px;
     }
 }
 
@@ -204,48 +180,8 @@
     }
     .tx {
         font-size: 20px;
-    }
-    .mapa {
-        width: 384px;
-        height: 300px;
-    }
-    .contactinformation {
-        font-size: 20px;
-    }
-    .whatsapp, .mail, .location {
-        font-size: 15px;
-    }
-    .formulario .qya {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: $max-width-425) {
-    .header-contact {
-        background-position: top;
-        height: 100%;
-        width: 425px;
-        background-repeat: no-repeat;
-    }
-    nav ul li {
-        display: block;
-    }
-    nav ul li a {
-        font-size: 10px;
-    }
-    .titulo {
-        font-size: 20px;
-    }
-    .contenedor {
-        grid-template-columns: 425px;
-        grid-template-rows: 150px 300px 200px;
-        grid-template-areas: 
-        "tx"
-        "mapa"
-        "contactInformation";
-    }
-    .tx {
-        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .mapa {
         width: 250px;
@@ -254,4 +190,79 @@
     .contactinformation {
         font-size: 15px;
     }
+    .whatsapp, .mail, .location {
+        font-size: 15px;
+    }
+    .formulario .qya {
+        font-size: 12px;
+    }
+}
+@media (max-width: 425px) {
+    .header-contact{
+        display: none;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .tx {
+            font-size: 28px; 
+        }
+
+        .mapa {
+            width: 90%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .contactInformationn {
+            width: 100%;
+            text-align: center;
+            .contactinformation {
+                font-size: 20px; 
+            }
+            .ul{
+                padding: 0%;
+                margin: 0%;
+            }
+            .whatsapp, .mail, .location {
+                font-size: 15px; 
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .formulario {
+        .qya {
+            font-size: 15px; 
+            text-align: center;
+        }
+
+        .form {
+            width: 100%;
+            padding: 0 20px;
+
+            .nm, .lastname, .adress, .country, .question {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .submit, .reset {
+                width: 60%;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+
+
+
+/* HELP Media Queri*/
+.header-help{
+    display: none;
+}
+.help{
+    font-size: 15px;
 }
