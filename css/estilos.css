@@ -11,7 +11,7 @@ body {
 .header-aboutrei {
   height: 2550px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portada\ About\ Rei.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ About\ Rei.png);
   background-size: cover;
   background-position: center;
 }
@@ -25,6 +25,7 @@ body {
 
 .corazonAboutRei {
   width: 200px;
+  display: block;
 }
 
 .textAboutRei {
@@ -85,15 +86,9 @@ body {
 .header-collections {
   height: 1500px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portada\ Collections.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ Collections.png);
   background-size: cover;
   background-position: center;
-}
-
-.video {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
 }
 
 .text {
@@ -103,6 +98,12 @@ body {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.video {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 .youtubevideo {
@@ -121,7 +122,7 @@ body {
 .collection1 .col, .collection1 .col2, .collection1 .col3, .collection1 .col4, .collection1 .col5, .collection2 .col, .collection2 .col2, .collection2 .col3, .collection2 .col4, .collection2 .col5, .collection3 .col, .collection3 .col2, .collection3 .col3, .collection3 .col4, .collection3 .col5, .collection4 .col, .collection4 .col2, .collection4 .col3, .collection4 .col4, .collection4 .col5, .collection5 .col, .collection5 .col2, .collection5 .col3, .collection5 .col4, .collection5 .col5 {
   font-family: "Delagothicone";
   color: #CB6D51;
-  font-size: 30px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,7 +315,7 @@ body {
 .header-contact {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portada\ Contact.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ Contact.png);
   background-size: cover;
   background-position: center;
 }
@@ -338,7 +339,8 @@ body {
   grid-area: mapa;
   justify-self: center;
   align-self: center;
-  width: 600px;
+  width: 250px;
+  height: 300px;
   margin-left: 10px;
 }
 .contenedor .contactInformationn {
@@ -417,7 +419,7 @@ body {
 .header-help {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/PortadaHelp.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/PortadaHelp.png);
   background-size: cover;
   background-position: center;
 }
@@ -449,42 +451,45 @@ body {
   margin-bottom: 20px;
 }
 
-.header {
+.boostrap {
+  display: none;
+}
+
+header .header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portadahome.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portadahome.png);
   background-size: cover;
   background-position: center;
 }
-
-.titulo {
+header .titulo {
   font-family: "delagothicone";
   font-size: 80px;
   color: #CB6D51;
 }
-
-nav {
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
 }
-nav ul li {
+header nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 10px;
 }
-nav ul li a {
+header nav ul li a {
   color: #CB6D51;
   font-family: "formadjrdisplay";
   font-size: 22px;
   text-decoration: none;
 }
-nav ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline #CB6D51;
+  color: #CB6D51;
 }
-nav ul li:hover {
+header nav ul li:hover {
   text-decoration: underline #CB6D51;
 }
 
