@@ -455,42 +455,41 @@ body {
   display: none;
 }
 
-.header {
+header .header {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portadahome.png);
   background-size: cover;
   background-position: center;
 }
-
-.titulo {
+header .titulo {
   font-family: "delagothicone";
   font-size: 80px;
   color: #CB6D51;
 }
-
-nav {
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
 }
-nav ul li {
+header nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 10px;
 }
-nav ul li .a {
+header nav ul li a {
   color: #CB6D51;
   font-family: "formadjrdisplay";
   font-size: 22px;
   text-decoration: none;
 }
-nav ul li .a:hover {
+header nav ul li a:hover {
   text-decoration: underline #CB6D51;
+  color: #CB6D51;
 }
-nav ul li:hover {
+header nav ul li:hover {
   text-decoration: underline #CB6D51;
 }
 
@@ -645,13 +644,19 @@ footer {
 /* INDEX REI MEDIA QUERIES */
 @media (max-width: 768px) {
   .header {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
+    display: none;
   }
-  .titulo {
-    font-size: 25px;
+  .boostrap {
+    display: inline-block;
+    width: 768px;
+  }
+  .boostrap .text-whiteh4 {
+    font-family: "delagothicone";
+    color: #CB6D51;
+  }
+  .boostrap .secciones {
+    text-decoration: none;
+    color: #FFEBCD;
   }
   .imghomex4 {
     width: 768px;
@@ -690,6 +695,7 @@ footer {
   }
   .boostrap {
     display: block;
+    width: 425px;
   }
   .boostrap .text-whiteh4 {
     font-family: "delagothicone";
@@ -743,13 +749,7 @@ footer {
 /* ABOUT REI MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-aboutrei {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
-  }
-  .titulo {
-    font-size: 25px;
+    display: none;
   }
 }
 @media (max-width: 425px) {
@@ -773,13 +773,7 @@ footer {
 /* COLLECTIONS MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-collections {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
-  }
-  .titulo {
-    font-size: 25px;
+    display: none;
   }
   .text {
     font-size: 15px;
@@ -811,10 +805,7 @@ footer {
 /* CONTACT MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-contact {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
+    display: none;
   }
   .tx {
     font-size: 20px;
@@ -884,12 +875,13 @@ footer {
     margin: 10px 0;
   }
 }
-/* HELP Media Queri*/
-.header-help {
-  display: none;
+/*HELP MEDIA QUERI*/
+@media (max-width: 768px) {
+  .header-help {
+    display: none;
+  }
 }
-
-.help {
+.a1, .a2, .a3, .a4 {
   font-size: 15px;
 }
 

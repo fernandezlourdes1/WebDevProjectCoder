@@ -1,13 +1,19 @@
 /* INDEX REI MEDIA QUERIES */
 @media (max-width: $max-width-768) {
-    .header {
-        background-position: top;
-        height: 100vh;
-        width: 768px;
-        background-repeat: no-repeat;
+    .header{
+        display: none;
     }
-    .titulo {
-        font-size: 25px;
+    .boostrap{
+        display: inline-block;
+        width: 768px;
+        .text-whiteh4{
+            font-family: "delagothicone";
+            color: $color-naranja;
+        }
+        .secciones{
+            text-decoration: none;
+            color: $color-crema;
+        }
     }
     .imghomex4 {
         width: 768px;
@@ -47,6 +53,7 @@
     }
     .boostrap{
         display: block;
+        width: 425px;
         .text-whiteh4{
             font-family: "delagothicone";
             color: $color-naranja;
@@ -101,13 +108,7 @@
 /* ABOUT REI MEDIA QUERIES */
 @media (max-width: $max-width-768) {
     .header-aboutrei {
-        background-position: top;
-        height: 100vh;
-        width: 768px;
-        background-repeat: no-repeat;
-    }
-    .titulo {
-        font-size: 25px;
+        display: none;
     }
 }
 
@@ -133,13 +134,7 @@
 /* COLLECTIONS MEDIA QUERIES */
 @media (max-width: $max-width-768) {
     .header-collections {
-        background-position: top;
-        height: 100vh;
-        width: 768px;
-        background-repeat: no-repeat;
-    }
-    .titulo {
-        font-size: 25px;
+        display: none;
     }
     .text {
         font-size: 15px;
@@ -173,10 +168,7 @@
 /* CONTACT MEDIA QUERIES */
 @media (max-width: $max-width-768) {
     .header-contact {
-        background-position: top;
-        height: 100vh;
-        width: 768px;
-        background-repeat: no-repeat;
+        display: none;
     }
     .tx {
         font-size: 20px;
@@ -257,12 +249,12 @@
 }
 
 
-
-
-/* HELP Media Queri*/
-.header-help{
-    display: none;
+/*HELP MEDIA QUERI*/
+@media (max-width: $max-width-768) {
+    .header-help {
+        display: none;
+    }
 }
-.help{
+.a1 , .a2 , .a3 , .a4{
     font-size: 15px;
 }
