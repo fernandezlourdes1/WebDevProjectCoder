@@ -11,7 +11,7 @@ body {
 .header-aboutrei {
   height: 2550px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ About\ Rei.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portada\ About\ Rei.png);
   background-size: cover;
   background-position: center;
 }
@@ -25,7 +25,6 @@ body {
 
 .corazonAboutRei {
   width: 200px;
-  display: block;
 }
 
 .textAboutRei {
@@ -86,9 +85,15 @@ body {
 .header-collections {
   height: 1500px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ Collections.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portada\ Collections.png);
   background-size: cover;
   background-position: center;
+}
+
+.video {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {
@@ -98,12 +103,6 @@ body {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.video {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
 }
 
 .youtubevideo {
@@ -122,7 +121,7 @@ body {
 .collection1 .col, .collection1 .col2, .collection1 .col3, .collection1 .col4, .collection1 .col5, .collection2 .col, .collection2 .col2, .collection2 .col3, .collection2 .col4, .collection2 .col5, .collection3 .col, .collection3 .col2, .collection3 .col3, .collection3 .col4, .collection3 .col5, .collection4 .col, .collection4 .col2, .collection4 .col3, .collection4 .col4, .collection4 .col5, .collection5 .col, .collection5 .col2, .collection5 .col3, .collection5 .col4, .collection5 .col5 {
   font-family: "Delagothicone";
   color: #CB6D51;
-  font-size: 18px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,7 +314,7 @@ body {
 .header-contact {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portada\ Contact.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portada\ Contact.png);
   background-size: cover;
   background-position: center;
 }
@@ -339,8 +338,7 @@ body {
   grid-area: mapa;
   justify-self: center;
   align-self: center;
-  width: 250px;
-  height: 300px;
+  width: 600px;
   margin-left: 10px;
 }
 .contenedor .contactInformationn {
@@ -419,7 +417,7 @@ body {
 .header-help {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/PortadaHelp.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/PortadaHelp.png);
   background-size: cover;
   background-position: center;
 }
@@ -451,45 +449,42 @@ body {
   margin-bottom: 20px;
 }
 
-.boostrap {
-  display: none;
-}
-
-header .header {
+.header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/images/Portadahome.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/Portadahome.png);
   background-size: cover;
   background-position: center;
 }
-header .titulo {
+
+.titulo {
   font-family: "delagothicone";
   font-size: 80px;
   color: #CB6D51;
 }
-header nav {
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
 }
-header nav ul li {
+nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 10px;
 }
-header nav ul li a {
+nav ul li a {
   color: #CB6D51;
   font-family: "formadjrdisplay";
   font-size: 22px;
   text-decoration: none;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline #CB6D51;
-  color: #CB6D51;
 }
-header nav ul li:hover {
+nav ul li:hover {
   text-decoration: underline #CB6D51;
 }
 
@@ -641,22 +636,15 @@ footer {
   transform: scale(2, 2);
 }
 
-/* INDEX REI MEDIA QUERIES */
 @media (max-width: 768px) {
   .header {
-    display: none;
-  }
-  .boostrap {
-    display: inline-block;
+    background-position: top;
+    height: 100vh;
     width: 768px;
+    background-repeat: no-repeat;
   }
-  .boostrap .text-whiteh4 {
-    font-family: "delagothicone";
-    color: #CB6D51;
-  }
-  .boostrap .secciones {
-    text-decoration: none;
-    color: #FFEBCD;
+  .titulo {
+    font-size: 25px;
   }
   .imghomex4 {
     width: 768px;
@@ -691,19 +679,19 @@ footer {
 }
 @media (max-width: 425px) {
   .header {
-    display: none;
-  }
-  .boostrap {
-    display: block;
+    background-position: top;
+    height: 100%;
     width: 425px;
+    background-repeat: no-repeat;
   }
-  .boostrap .text-whiteh4 {
-    font-family: "delagothicone";
-    color: #CB6D51;
+  nav ul li {
+    display: block;
   }
-  .boostrap .secciones {
-    text-decoration: none;
-    color: #FFEBCD;
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
   }
   .imghomex4 {
     width: 425px;
@@ -749,12 +737,30 @@ footer {
 /* ABOUT REI MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-aboutrei {
-    display: none;
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
+  }
+  .titulo {
+    font-size: 25px;
   }
 }
 @media (max-width: 425px) {
   .header-aboutrei {
-    display: none;
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
   }
   .corazonAboutRei {
     width: 30px;
@@ -773,7 +779,13 @@ footer {
 /* COLLECTIONS MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-collections {
-    display: none;
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
+  }
+  .titulo {
+    font-size: 25px;
   }
   .text {
     font-size: 15px;
@@ -790,34 +802,47 @@ footer {
 }
 @media (max-width: 425px) {
   .header-collections {
-    display: none;
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 20px;
   }
   .text {
-    font-size: 13px;
+    font-size: 10px;
   }
   .youtubevideo {
-    width: 390px;
-    height: 390px;
-    margin-left: 15px;
-    margin-right: 5px;
+    width: 402px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 /* CONTACT MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-contact {
-    display: none;
+    background-position: top;
+    height: 100vh;
+    width: 768px;
+    background-repeat: no-repeat;
   }
   .tx {
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   .mapa {
-    width: 250px;
+    width: 384px;
     height: 300px;
   }
   .contactinformation {
-    font-size: 15px;
+    font-size: 20px;
   }
   .whatsapp, .mail, .location {
     font-size: 15px;
@@ -828,61 +853,35 @@ footer {
 }
 @media (max-width: 425px) {
   .header-contact {
-    display: none;
+    background-position: top;
+    height: 100%;
+    width: 425px;
+    background-repeat: no-repeat;
   }
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  nav ul li {
+    display: block;
   }
-  .contenedor .tx {
-    font-size: 28px;
+  nav ul li a {
+    font-size: 10px;
   }
-  .contenedor .mapa {
-    width: 90%;
-    height: auto;
-    margin: 10px 0;
-  }
-  .contenedor .contactInformationn {
-    width: 100%;
-    text-align: center;
-  }
-  .contenedor .contactInformationn .contactinformation {
+  .titulo {
     font-size: 20px;
   }
-  .contenedor .contactInformationn .ul {
-    padding: 0%;
-    margin: 0%;
+  .contenedor {
+    grid-template-columns: 425px;
+    grid-template-rows: 150px 300px 200px;
+    grid-template-areas: "tx" "mapa" "contactInformation";
   }
-  .contenedor .contactInformationn .whatsapp, .contenedor .contactInformationn .mail, .contenedor .contactInformationn .location {
+  .tx {
+    font-size: 20px;
+  }
+  .mapa {
+    width: 250px;
+    height: 300px;
+  }
+  .contactinformation {
     font-size: 15px;
-    margin: 10px 0;
   }
-  .formulario .qya {
-    font-size: 15px;
-    text-align: center;
-  }
-  .formulario .form {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .formulario .form .nm, .formulario .form .lastname, .formulario .form .adress, .formulario .form .country, .formulario .form .question {
-    width: 100%;
-    margin: 5px 0;
-  }
-  .formulario .form .submit, .formulario .form .reset {
-    width: 60%;
-    margin: 10px 0;
-  }
-}
-/*HELP MEDIA QUERI*/
-@media (max-width: 768px) {
-  .header-help {
-    display: none;
-  }
-}
-.a1, .a2, .a3, .a4 {
-  font-size: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
