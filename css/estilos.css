@@ -636,15 +636,22 @@ footer {
   transform: scale(2, 2);
 }
 
+/* INDEX REI MEDIA QUERIES */
 @media (max-width: 768px) {
   .header {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
+    display: none;
   }
-  .titulo {
-    font-size: 25px;
+  .boostrap {
+    display: inline-block;
+    width: 768px;
+  }
+  .boostrap .text-whiteh4 {
+    font-family: "delagothicone";
+    color: #CB6D51;
+  }
+  .boostrap .secciones {
+    text-decoration: none;
+    color: #FFEBCD;
   }
   .imghomex4 {
     width: 768px;
@@ -679,19 +686,19 @@ footer {
 }
 @media (max-width: 425px) {
   .header {
-    background-position: top;
-    height: 100%;
-    width: 425px;
-    background-repeat: no-repeat;
+    display: none;
   }
-  nav ul li {
+  .boostrap {
     display: block;
+    width: 425px;
   }
-  nav ul li a {
-    font-size: 10px;
+  .boostrap .text-whiteh4 {
+    font-family: "delagothicone";
+    color: #CB6D51;
   }
-  .titulo {
-    font-size: 20px;
+  .boostrap .secciones {
+    text-decoration: none;
+    color: #FFEBCD;
   }
   .imghomex4 {
     width: 425px;
@@ -737,30 +744,12 @@ footer {
 /* ABOUT REI MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-aboutrei {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
-  }
-  .titulo {
-    font-size: 25px;
+    display: none;
   }
 }
 @media (max-width: 425px) {
   .header-aboutrei {
-    background-position: top;
-    height: 100%;
-    width: 425px;
-    background-repeat: no-repeat;
-  }
-  nav ul li {
-    display: block;
-  }
-  nav ul li a {
-    font-size: 10px;
-  }
-  .titulo {
-    font-size: 20px;
+    display: none;
   }
   .corazonAboutRei {
     width: 30px;
@@ -779,13 +768,7 @@ footer {
 /* COLLECTIONS MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-collections {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
-  }
-  .titulo {
-    font-size: 25px;
+    display: none;
   }
   .text {
     font-size: 15px;
@@ -802,47 +785,34 @@ footer {
 }
 @media (max-width: 425px) {
   .header-collections {
-    background-position: top;
-    height: 100%;
-    width: 425px;
-    background-repeat: no-repeat;
-  }
-  nav ul li {
-    display: block;
-  }
-  nav ul li a {
-    font-size: 10px;
-  }
-  .titulo {
-    font-size: 20px;
+    display: none;
   }
   .text {
-    font-size: 10px;
+    font-size: 13px;
   }
   .youtubevideo {
-    width: 402px;
-    height: 400px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 390px;
+    height: 390px;
+    margin-left: 15px;
+    margin-right: 5px;
   }
 }
 /* CONTACT MEDIA QUERIES */
 @media (max-width: 768px) {
   .header-contact {
-    background-position: top;
-    height: 100vh;
-    width: 768px;
-    background-repeat: no-repeat;
+    display: none;
   }
   .tx {
     font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .mapa {
-    width: 384px;
+    width: 250px;
     height: 300px;
   }
   .contactinformation {
-    font-size: 20px;
+    font-size: 15px;
   }
   .whatsapp, .mail, .location {
     font-size: 15px;
@@ -853,35 +823,61 @@ footer {
 }
 @media (max-width: 425px) {
   .header-contact {
-    background-position: top;
-    height: 100%;
-    width: 425px;
-    background-repeat: no-repeat;
-  }
-  nav ul li {
-    display: block;
-  }
-  nav ul li a {
-    font-size: 10px;
-  }
-  .titulo {
-    font-size: 20px;
+    display: none;
   }
   .contenedor {
-    grid-template-columns: 425px;
-    grid-template-rows: 150px 300px 200px;
-    grid-template-areas: "tx" "mapa" "contactInformation";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .tx {
+  .contenedor .tx {
+    font-size: 28px;
+  }
+  .contenedor .mapa {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .contenedor .contactInformationn {
+    width: 100%;
+    text-align: center;
+  }
+  .contenedor .contactInformationn .contactinformation {
     font-size: 20px;
   }
-  .mapa {
-    width: 250px;
-    height: 300px;
+  .contenedor .contactInformationn .ul {
+    padding: 0%;
+    margin: 0%;
   }
-  .contactinformation {
+  .contenedor .contactInformationn .whatsapp, .contenedor .contactInformationn .mail, .contenedor .contactInformationn .location {
     font-size: 15px;
+    margin: 10px 0;
   }
+  .formulario .qya {
+    font-size: 15px;
+    text-align: center;
+  }
+  .formulario .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .formulario .form .nm, .formulario .form .lastname, .formulario .form .adress, .formulario .form .country, .formulario .form .question {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .formulario .form .submit, .formulario .form .reset {
+    width: 60%;
+    margin: 10px 0;
+  }
+}
+/*HELP MEDIA QUERI*/
+@media (max-width: 768px) {
+  .header-help {
+    display: none;
+  }
+}
+.a1, .a2, .a3, .a4 {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
