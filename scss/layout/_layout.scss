@@ -1,4 +1,14 @@
 /* INDEX REI MEDIA QUERIES */
+@media (max-width: 2560px) and (min-width: 769px) {
+    .boostrap{
+        display: none;
+    }
+    .header{
+        .titulo{
+            font-size: 20px;
+        }
+    }
+}
 @media (max-width: $max-width-768) {
     .header{
         display: none;
@@ -106,6 +116,16 @@
 }
 
 /* ABOUT REI MEDIA QUERIES */
+@media (max-width: 2560px) and (min-width: 769px) {
+    .boostrap{
+        display: none;
+    }
+    .header-aboutrei{
+        .titulo{
+            font-size: 20px;
+        }
+    }
+}
 @media (max-width: $max-width-768) {
     .header-aboutrei {
         display: none;
@@ -132,6 +152,16 @@
 }
 
 /* COLLECTIONS MEDIA QUERIES */
+@media (max-width: 2560px) and (min-width: 769px) {
+    .boostrap{
+        display: none;
+    }
+    .header-collections{
+        .titulo{
+            font-size: 20px;
+        }
+    }
+}
 @media (max-width: $max-width-768) {
     .header-collections {
         display: none;
@@ -166,6 +196,16 @@
 }
 
 /* CONTACT MEDIA QUERIES */
+@media (max-width: 2560px) and (min-width: 769px) {
+    .boostrap{
+        display: none;
+    }
+    .header-contact{
+        .titulo{
+            font-size: 20px;
+        }
+    }
+}
 @media (max-width: $max-width-768) {
     .header-contact {
         display: none;
@@ -250,6 +290,16 @@
 
 
 /*HELP MEDIA QUERI*/
+@media (max-width: 2560px) and (min-width: 769px) {
+    .boostrap{
+        display: none;
+    }
+    .header-help{
+        .titulo{
+            font-size: 20px;
+        }
+    }
+}
 @media (max-width: $max-width-768) {
     .header-help {
         display: none;
