@@ -152,13 +152,27 @@
 }
 
 /* COLLECTIONS MEDIA QUERIES */
-@media (max-width: 2560px) and (min-width: 769px) {
+@media (max-width: 2560px) and (min-width: 1441px) {
+    .video{
+        .youtubevideo{
+            width:2500px ;
+            height:800px ;
+        }
+    }
+}
+@media (max-width: 1440px) and (min-width: 769px) {
     .boostrap{
         display: none;
     }
     .header-collections{
         .titulo{
             font-size: 20px;
+        }
+    }
+    .video{
+        .youtubevideo{
+            width: 1380px;
+            height: 800px;
         }
     }
 }
